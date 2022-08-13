@@ -14,7 +14,6 @@
 .navbar .colour{
     line-height: 2;
     padding-right: 20px;
-
 }
 
 .navbar .colour input{
@@ -29,9 +28,9 @@
     line-height: 2;
 }
 
-@media screen and (max-width: 498){
+@media screen and (max-width: 472px){
     .action{
-        margin-top: 30px;
+        margin-top: 20px;
     }
 }
 
