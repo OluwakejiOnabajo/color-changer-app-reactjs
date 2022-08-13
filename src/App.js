@@ -2,26 +2,27 @@ import Home from "./pages/home/Home";
 import { createContext, useState } from "react";
 import Navbar from "./components/navbar/Navbar";
 
-export const ThemeContext = createContext(null);
+export const BgContext = createContext(null);
 
 function App() {
 
-  const [theme, setTheme] = useState("light");
+  const [bg, setBg] = useState("#ffffff");
 
-  const toggleTheme = (props) => {
-    setTheme((curr) => (curr === "light" ? props :"light"));
-    console.log(props);
+  // Toggle background
+  const toggleBg = (newColour) => {
+    setBg(newColour);
+    // console.log(colour);
   };
 
 
   
   return (
-    <ThemeContext.Provider value={{theme, toggleTheme}} >
-    <div className="page" style={{backgroundColor: theme}}> 
-    <Navbar toggle={toggleTheme} />  
+    <BgContext.Provider value={{bg, toggleBg}} >
+    <div className="page" style={{backgroundColor: bg}}> 
+    <Navbar toggle={toggleBg} />  
      <Home />
     </div>
-    </ThemeContext.Provider>
+    </BgContext.Provider>
   );
 }
 

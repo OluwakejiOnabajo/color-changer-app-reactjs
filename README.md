@@ -1,3 +1,15 @@
+# Project Detail
+
+### Title: Colour changer App
+
+### SAIL Tech Talent Project 3
+
+### Description:
+Background colour changes to any colour of your choice, and can also be toggled to select a random colour automatically.
+
+### Preview
+This project have been deployed and can be view [here - colour-changer-app](https://oluwakejionabajo.github.io/colour-changer-app).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
