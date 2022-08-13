@@ -1,0 +1,53 @@
+.navbar{
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #230639;
+    color: #fff;
+}
+
+.navbar .brand{
+   margin: 0; 
+   padding-right: 20px;
+}
+
+.navbar .colour{
+    line-height: 2;
+    padding-right: 20px;
+
+}
+
+.navbar .colour input{
+    border-radius: 5px;
+}
+
+.action{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display: flex;
+    line-height: 2;
+}
+
+@media screen and (max-width: 498){
+    .action{
+        margin-top: 30px;
+    }
+}
+
+.action li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.action .action-icon{
+    cursor: pointer;
+}
+
+.action .action-icon:hover{
+    opacity: 0.8;
+}
+
+.action .action-icon:active{
+    color: chartreuse;
+}

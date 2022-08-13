@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./pages/home/Home";
+import { createContext, useState } from "react";
+import Navbar from "./components/navbar/Navbar";
+
+export const ThemeContext = createContext(null);
 
 function App() {
+
+  const [theme, setTheme] = useState("light");
+
+  const toggleTheme = (props) => {
+    setTheme((curr) => (curr === "light" ? props :"light"));
+    console.log(props);
+  };
+
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <ThemeContext.Provider value={{theme, toggleTheme}} >
+    <div className="page" style={{backgroundColor: theme}}> 
+    <Navbar toggle={toggleTheme} />  
+     <Home />
     </div>
+    </ThemeContext.Provider>
   );
 }
 

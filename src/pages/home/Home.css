@@ -1,0 +1,10 @@
+.home{
+    margin: 30px 50px;
+}
+
+.home-text{
+    width: 500px;
+    margin: 100px auto;
+    font-weight: bold;
+    text-align: center;
+}
