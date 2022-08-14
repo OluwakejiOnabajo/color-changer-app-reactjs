@@ -8,3 +8,30 @@
     font-weight: bold;
     text-align: center;
 }
+
+.page{
+    height: 100vh;
+    background-size: cover;
+  }  
+
+.comment{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  .comment, .comment a{
+    text-decoration: none;
+  }
+  
+  .comment span{
+    color: red;
+  }
+  
+  .comment a:hover{
+    color: cornflowerblue;
+  }

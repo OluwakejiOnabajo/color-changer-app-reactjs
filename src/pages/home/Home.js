@@ -1,15 +1,29 @@
 import './Home.css';
+import { createContext, useState } from "react";
+import Navbar from "../../components/navbar/Navbar";
+import { Link } from "react-router-dom";
 
-const Home = () => {
+export const BgContext = createContext(null);
+
+function Home() {
+
+  const [bg, setBg] = useState("#ffffff");
+
+  // Toggle background
+  const toggleBg = (newColour) => {
+    setBg(newColour);
+    // console.log(colour);
+  };
+
   
   return (
-    <>
-    <div className='header'>
-    {/* <h2 className='header-text'>Colour Change Appears here</h2> */}
+    <BgContext.Provider value={{bg, toggleBg}} >
+    <div className="page" style={{backgroundColor: bg}}> 
+    <Navbar toggle={toggleBg} />  
+    <p className='comment'>Made with <span>❣</span> by <Link to="/" onClick={() => { window.location.href= 'https://github.com/OnabajoOluwakeji'; }} >Oluwakeji Onabajo</Link></p>
     </div>
-
-  </>
-  )
+    </BgContext.Provider>
+  );
 }
 
-export default Home
+export default Home;
