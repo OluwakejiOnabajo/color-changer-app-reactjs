@@ -3,7 +3,7 @@ import Home from "./pages/home/Home";
 
 function MyRoutes() {
   return (
-    <BrowserRouter basename='color-changer-app-reactjs'>
+    <BrowserRouter>
     <Routes>
       <Route exact path="/" element={<Home />} />
     </Routes>

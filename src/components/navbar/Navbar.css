@@ -8,12 +8,11 @@
 
 .navbar .brand{
    margin: 0; 
-   padding-right: 20px;
 }
 
 .navbar .colour{
-    line-height: 2;
-    padding-right: 20px;
+    margin: 0 10px;
+    text-align: center;
 }
 
 .navbar .colour input{
@@ -25,12 +24,15 @@
     padding: 0;
     text-decoration: none;
     display: flex;
-    line-height: 2;
 }
 
 @media screen and (max-width: 472px){
-    .action{
-        margin-top: 20px;
+    .navbar{
+        padding: 18px 20px;
+    }
+
+    .colour small {
+        display: block;
     }
 }
 

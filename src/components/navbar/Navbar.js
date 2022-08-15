@@ -28,7 +28,7 @@ const Navbar = (bg) => {
     <div className='navbar'>
         <h3 className='brand'>My Colour Changer</h3>
 
-        <div className='colour'>Colour: <input type="color" value={colour} onChange={(e) => handleColour(e)} /> </div>
+        <div className='colour'>Colour: <input type="color" value={colour} onChange={(e) => handleColour(e)} /> <small> { colour }</small> </div>
 
     <ul className='action'>
         <li><FaMoon onClick={toggleColour} className='action-icon' title='Toggle colour' /></li>
