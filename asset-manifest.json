@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/color-changer-app-reactjs/static/css/main.c5e6506b.css",
-    "main.js": "/color-changer-app-reactjs/static/js/main.92c719c2.js",
+    "main.js": "/color-changer-app-reactjs/static/js/main.1751ab3a.js",
     "index.html": "/color-changer-app-reactjs/index.html",
     "main.c5e6506b.css.map": "/color-changer-app-reactjs/static/css/main.c5e6506b.css.map",
-    "main.92c719c2.js.map": "/color-changer-app-reactjs/static/js/main.92c719c2.js.map"
+    "main.1751ab3a.js.map": "/color-changer-app-reactjs/static/js/main.1751ab3a.js.map"
   },
   "entrypoints": [
     "static/css/main.c5e6506b.css",
-    "static/js/main.92c719c2.js"
+    "static/js/main.1751ab3a.js"
   ]
 }
