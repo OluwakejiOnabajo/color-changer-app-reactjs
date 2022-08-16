@@ -2,10 +2,12 @@
 
 ### Title: Colour changer App
 
-### SAIL Tech Talent Project 3
+### SAIL Tech Talent Project 2
 
 ### Description:
-Background colour changes to any colour of your choice, and can also be toggled to select a random colour automatically.
+Background colour changes to any colour of your choice, and can also be toggled to select a random colour automatically.\
+Users select a colour for their theme (the background of their website), the theme changes depending on the colour selected
+
 
 ### Preview
 This project have been deployed and can be view [here - colour-changer-app](https://oluwakejionabajo.github.io/colour-changer-app).

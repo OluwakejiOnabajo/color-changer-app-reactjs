@@ -20,7 +20,7 @@ function Home() {
     <BgContext.Provider value={{bg, toggleBg}} >
     <div className="page" style={{backgroundColor: bg}}> 
     <Navbar toggle={toggleBg} />  
-    <p className='comment'>Made with <span>❣</span> by <Link to="/" onClick={() => { window.location.href= 'https://github.com/OnabajoOluwakeji'; }} >Oluwakeji Onabajo</Link></p>
+    <p className='comment'>Made with <span>❤</span> by <Link to="/" onClick={() => { window.location.href= 'https://github.com/OnabajoOluwakeji'; }} >Oluwakeji Onabajo</Link></p>
     </div>
     </BgContext.Provider>
   );
