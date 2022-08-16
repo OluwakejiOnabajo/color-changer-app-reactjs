@@ -10,7 +10,7 @@ Users select a colour for their theme (the background of their website), the the
 
 
 ### Preview
-This project have been deployed and can be view [here - colour-changer-app](https://oluwakejionabajo.github.io/colour-changer-app).
+This project have been deployed and can be view [here - colour-changer-app](https://colour-changer.herokuapp.com/).
 
 # Getting Started with Create React App
 
