@@ -5,6 +5,7 @@ function MyRoutes() {
   return (
     <BrowserRouter>
     <Routes>
+      {/* Home page */}
       <Route exact path="/" element={<Home />} />
     </Routes>
   </BrowserRouter>
