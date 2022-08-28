@@ -2,7 +2,7 @@
 
 ### Title: Colour changer App
 
-### SAIL Tech Talent Project 2
+### SAIL Tech Talent Project 1
 
 ### Description:
 Background colour changes to any colour of your choice, and can also be toggled to select a random colour automatically.\

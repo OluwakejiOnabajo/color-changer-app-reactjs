@@ -1,15 +1,8 @@
 import './Navbar.css';
 import { FaMoon, FaUndo } from 'react-icons/fa';
-import { useState } from 'react';
 
 const Navbar = (props) => {
-const {setBgColour, bgColour } = props;
-  
-  //Get users preferred colour
-  // const handleColour = (e) =>{
-  //   bg.toggle(e.target.value);
-  //   // console.log(e.target.value);
-  // }
+const {bgColour, setBgColour } = props;
 
     // generate random colours for user
   const toggleBgColour = () =>{
@@ -20,17 +13,21 @@ const {setBgColour, bgColour } = props;
 
   const resetBgColour = () =>{
     // Reset colour to default state
-    setBgColour();
+    setBgColour('#ffffff');
   }
 
   return (
     <div className='navbar'>
         <h3 className='brand'>My Colour Changer</h3>
-
-        <div className='colour'>Colour: <input type="color" value={bgColour} onChange={(e) => setBgColour(e.target.value)} /> <small> { bgColour }</small> </div>
+        
+        {/* Select colour manually */}
+        <div className='colour'>Colour: <input type="color" value={bgColour} onChange={(e) => setBgColour(e.target.value)} /> 
+        <small> { bgColour }</small> </div>
 
     <ul className='action'>
+      {/* Select colour automatically */}
         <li><FaMoon onClick={toggleBgColour} className='action-icon' title='Toggle colour' /></li>
+        {/* Reset color */}
         <li><FaUndo onClick={resetBgColour} className='action-icon' title='Reset colour' /> </li>
         </ul>
     </div>
